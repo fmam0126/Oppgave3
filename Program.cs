@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        do
+        {
+            
         Calculate calculate = new Calculate();
         string firstInput = Ui.AskForFirstNumber();
         string calculatorOperator = Ui.ChooseOperator();
@@ -13,6 +16,14 @@ class Program
         {
             Console.WriteLine("Enter a valid inpuit");
         }
+        string exitInput = Ui.AskForExit();
+        if (exitInput == "No")
+            {
+                
+                break;
+
+            }
+        } while (true);
         
 
 

@@ -1,4 +1,5 @@
 using System.Configuration.Assemblies;
+using System.Net.NetworkInformation;
 using System.Security.Cryptography.X509Certificates;
 using Spectre.Console;
 using Spectre.Console.Rendering;
@@ -45,12 +46,14 @@ public class Calculate
                 {
                     if (int.TryParse(firstInput, out int firstNumber) && int.TryParse(secondInput, out int secondNumber))
                     {
-                        AnsiConsole.WriteLine(Calculate.Sum(firstNumber, secondNumber));
+                        Ui.WriteResult(Calculate.Sum(firstNumber, secondNumber));
+                        
+                        //AnsiConsole.WriteLine(Calculate.Sum(firstNumber, secondNumber));
                         return true;
                     }
                     if (double.TryParse(firstInput, out double firstDoubleNumber) && double.TryParse(secondInput, out double secondDoubleNumber))
                     {
-                        AnsiConsole.WriteLine(Calculate.Sum(firstDoubleNumber, secondDoubleNumber));
+                        Ui.WriteResult(Calculate.Sum(firstDoubleNumber, secondDoubleNumber));
                         return true;
                     }
                     return false;
@@ -59,12 +62,12 @@ public class Calculate
                 {
                     if (int.TryParse(firstInput, out int firstNumber) && int.TryParse(secondInput, out int secondNumber))
                     {
-                        AnsiConsole.WriteLine(Calculate.Minus(firstNumber, secondNumber));
+                        Ui.WriteResult(Calculate.Minus(firstNumber, secondNumber));
                         return true;
                     }
                     if (double.TryParse(firstInput, out double firstDoubleNumber) && double.TryParse(secondInput, out double secondDoubleNumber))
                     {
-                        AnsiConsole.WriteLine(Calculate.Minus(firstDoubleNumber, secondDoubleNumber));
+                        Ui.WriteResult(Calculate.Minus(firstDoubleNumber, secondDoubleNumber));
                         return true;
                     }
                     return false;
@@ -73,12 +76,12 @@ public class Calculate
                 {
                     if (int.TryParse(firstInput, out int firstNumber) && int.TryParse(secondInput, out int secondNumber))
                     {
-                        AnsiConsole.WriteLine(Calculate.Multiply(firstNumber, secondNumber));
+                        Ui.WriteResult(Calculate.Multiply(firstNumber, secondNumber));
                         return true;
                     }
                     if (double.TryParse(firstInput, out double firstDoubleNumber) && double.TryParse(secondInput, out double secondDoubleNumber))
                     {
-                        AnsiConsole.WriteLine(Calculate.Multiply(firstDoubleNumber, secondDoubleNumber));
+                        Ui.WriteResult(Calculate.Multiply(firstDoubleNumber, secondDoubleNumber));
                         return true;
                     }
                     return false;
@@ -87,12 +90,12 @@ public class Calculate
                 {
                     if (int.TryParse(firstInput, out int firstNumber) && int.TryParse(secondInput, out int secondNumber))
                     {
-                        AnsiConsole.WriteLine(Calculate.Divide(firstNumber, secondNumber));
+                        Ui.WriteResult(Calculate.Divide(firstNumber, secondNumber));
                         return true;
                     }
                     if (double.TryParse(firstInput, out double firstDoubleNumber) && double.TryParse(secondInput, out double secondDoubleNumber))
                     {
-                        AnsiConsole.WriteLine(Calculate.Divide(firstDoubleNumber, secondDoubleNumber));
+                        Ui.WriteResult(Calculate.Divide(firstDoubleNumber, secondDoubleNumber));
                         return true;
                     }
                     return false;

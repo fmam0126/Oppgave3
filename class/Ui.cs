@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic;
 using Spectre.Console;
 
 public static class Ui
@@ -16,5 +17,22 @@ public static class Ui
     {
         AnsiConsole.Clear();
         return AnsiConsole.Prompt(new SelectionPrompt<string>().Title("Please Select the operator:").AddChoices("+","-","*","/"));
+    }
+    public static string AskForExit()
+    {
+        
+        return AnsiConsole.Prompt(new SelectionPrompt<string>().Title("Do You Want to Continue?").AddChoices("Yes","No"));
+    }
+    public static void WriteResult(int result)
+    {
+        AnsiConsole.Clear();
+        AnsiConsole.WriteLine("The result is: ");
+        AnsiConsole.WriteLine(result);
+    }
+        public static void WriteResult(double result)
+    {
+        AnsiConsole.Clear();
+        AnsiConsole.WriteLine("The result is: ");
+        AnsiConsole.WriteLine(result);
     }
 }
