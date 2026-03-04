@@ -88,11 +88,11 @@ public class Calculate
                 }
             case "/":
                 {
-                    if (int.TryParse(firstInput, out int firstNumber) && int.TryParse(secondInput, out int secondNumber))
-                    {
-                        Ui.WriteResult(Calculate.Divide(firstNumber, secondNumber));
-                        return true;
-                    }
+                    // if (int.TryParse(firstInput, out int firstNumber) && int.TryParse(secondInput, out int secondNumber))
+                    // {
+                    //     Ui.WriteResult(Calculate.Divide(firstNumber, secondNumber));
+                    //     return true;
+                    // }
                     if (double.TryParse(firstInput, out double firstDoubleNumber) && double.TryParse(secondInput, out double secondDoubleNumber))
                     {
                         Ui.WriteResult(Calculate.Divide(firstDoubleNumber, secondDoubleNumber));
