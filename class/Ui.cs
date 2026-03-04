@@ -35,4 +35,10 @@ public static class Ui
         AnsiConsole.WriteLine("The result is: ");
         AnsiConsole.WriteLine(result);
     }
+        public static void DivideByZeroWarning()
+    {
+        AnsiConsole.Clear();
+        AnsiConsole.WriteLine("You Cant Divide by zero");
+    }
+
 }

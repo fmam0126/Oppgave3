@@ -95,6 +95,11 @@ public class Calculate
                     // }
                     if (double.TryParse(firstInput, out double firstDoubleNumber) && double.TryParse(secondInput, out double secondDoubleNumber))
                     {
+                        if (firstDoubleNumber == 0 || secondDoubleNumber == 0)
+                        {
+                            Ui.DivideByZeroWarning();
+                            return false;
+                        }
                         Ui.WriteResult(Calculate.Divide(firstDoubleNumber, secondDoubleNumber));
                         return true;
                     }

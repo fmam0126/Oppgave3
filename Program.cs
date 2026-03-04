@@ -1,4 +1,6 @@
-﻿namespace Oppgave3;
+﻿using Spectre.Console;
+
+namespace Oppgave3;
 
 class Program
 {
@@ -14,7 +16,7 @@ class Program
 
         if (!calculate.CalculateNumbers(firstInput, secondInput, calculatorOperator))
         {
-            Console.WriteLine("Enter a valid inpuit");
+            AnsiConsole.WriteLine("Enter a valid input");
         }
         string exitInput = Ui.AskForExit();
         if (exitInput == "No")
