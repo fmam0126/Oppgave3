@@ -1,4 +1,3 @@
-using Microsoft.VisualBasic;
 using Spectre.Console;
 
 public static class Ui

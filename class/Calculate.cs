@@ -1,9 +1,3 @@
-using System.Configuration.Assemblies;
-using System.Net.NetworkInformation;
-using System.Security.Cryptography.X509Certificates;
-using Spectre.Console;
-using Spectre.Console.Rendering;
-
 public class Calculate
 {
     public static int Sum(int a, int b)
