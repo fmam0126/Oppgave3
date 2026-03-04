@@ -19,7 +19,6 @@ public static class Ui
     }
     public static string AskForExit()
     {
-        
         return AnsiConsole.Prompt(new SelectionPrompt<string>().Title("Do You Want to Continue?").AddChoices("Yes","No"));
     }
     public static void WriteResult(int result)
