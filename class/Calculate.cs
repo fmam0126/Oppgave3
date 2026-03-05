@@ -32,6 +32,13 @@ public class Calculate
     {
         return a / b;
     }
+    /// <summary>
+    /// Calculates the Math operation using the correct operator
+    /// </summary>
+    /// <param name="firstInput">First Number input</param>
+    /// <param name="secondInput">Second Number input</param>
+    /// <param name="calculatorOperator">What operator to use (+,-,*,/)</param>
+    /// <returns>Returns True or False if the Math operation was successful or not</returns>
     public bool CalculateNumbers(string firstInput, string secondInput, string calculatorOperator)
     {
         switch (calculatorOperator)
