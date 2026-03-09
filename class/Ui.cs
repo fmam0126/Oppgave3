@@ -15,11 +15,11 @@ public static class Ui
     public static string ChooseOperator()
     {
         AnsiConsole.Clear();
-        return AnsiConsole.Prompt(new SelectionPrompt<string>().Title("Please Select the operator:").AddChoices("+","-","*","/"));
+        return AnsiConsole.Prompt(new SelectionPrompt<string>().Title("Please Select the operator:").AddChoices("+", "-", "*", "/"));
     }
     public static string AskForExit()
     {
-        return AnsiConsole.Prompt(new SelectionPrompt<string>().Title("Do You Want to Continue?").AddChoices("Yes","No"));
+        return AnsiConsole.Prompt(new SelectionPrompt<string>().Title("Do You Want to Continue?").AddChoices("Yes", "No"));
     }
     public static void WriteResult(int result)
     {
@@ -27,13 +27,13 @@ public static class Ui
         AnsiConsole.WriteLine("The result is: ");
         AnsiConsole.WriteLine(result);
     }
-        public static void WriteResult(double result)
+    public static void WriteResult(double result)
     {
         AnsiConsole.Clear();
         AnsiConsole.WriteLine("The result is: ");
         AnsiConsole.WriteLine(result);
     }
-        public static void DivideByZeroWarning()
+    public static void DivideByZeroWarning()
     {
         AnsiConsole.Clear();
         AnsiConsole.WriteLine("You Cant Divide by zero");

@@ -16,7 +16,7 @@ public class Calculate
                     if (int.TryParse(firstInput, out int firstNumber) && int.TryParse(secondInput, out int secondNumber))
                     {
                         Ui.WriteResult(Operation.Sum(firstNumber, secondNumber));
-                        
+
                         //AnsiConsole.WriteLine(Operation.Sum(firstNumber, secondNumber));
                         return true;
                     }

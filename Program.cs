@@ -8,25 +8,25 @@ class Program
     {
         do
         {
-            
-        Calculate calculate = new Calculate();
-        string firstInput = Ui.AskForFirstNumber();
-        string calculatorOperator = Ui.ChooseOperator();
-        string secondInput = Ui.AskForSecondNumber();
 
-        if (!calculate.CalculateNumbers(firstInput, secondInput, calculatorOperator))
-        {
-            AnsiConsole.WriteLine("Enter a valid input");
-        }
-        string exitInput = Ui.AskForExit();
-        if (exitInput == "No")
+            Calculate calculate = new Calculate();
+            string firstInput = Ui.AskForFirstNumber();
+            string calculatorOperator = Ui.ChooseOperator();
+            string secondInput = Ui.AskForSecondNumber();
+
+            if (!calculate.CalculateNumbers(firstInput, secondInput, calculatorOperator))
             {
-                
+                AnsiConsole.WriteLine("Enter a valid input");
+            }
+            string exitInput = Ui.AskForExit();
+            if (exitInput == "No")
+            {
+
                 break;
 
             }
         } while (true);
-        
+
 
 
         // Calculate calculate = new Calculate();
